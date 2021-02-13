@@ -248,7 +248,11 @@ def main():
     img_ids = [os.path.splitext(os.path.basename(p))[0] for p in img_ids]
 
     train_img_ids, val_img_ids = train_test_split(img_ids, test_size=0.2, random_state=41)
-
+    
+    #######################
+    train_img_ids = img_ids
+    #######################
+    
     train_transform = Compose([
         transforms.RandomRotate90(),
         transforms.Flip(),

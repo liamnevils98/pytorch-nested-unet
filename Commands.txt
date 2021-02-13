@@ -2,6 +2,6 @@
 Unet Current Commands
 #####################
 
-python pytorch-nested-unet/train.py --dataset /lfs/Nevils/Unet/inputs/art_noise --arch NestedUNet --img_ext .png --mask_ext .png --input_w 256 --input_h 256 --batch_size 4 --epochs 10
+python pytorch-nested-unet/train.py --dataset /lfs/Nevils/Unet/inputs/art_noise --arch NestedUNet --img_ext .png --mask_ext .png --input_w 256 --input_h 256 --batch_size 4 --epochs 100
 
 python pytorch-nested-unet/val.py --name /lfs/Nevils/Unet/inputs/art_noise_NestedUNet_woDS
